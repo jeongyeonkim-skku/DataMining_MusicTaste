@@ -1,8 +1,8 @@
 import pandas as pd
 
 def preprocess():
-    spotify = pd.read_csv("data/raw/spotify_tracks.csv")
-    survey = pd.read_csv("data/raw/survey.csv")
+    spotify = pd.read_csv("data/SpotifyFeatures.csv")
+    survey = pd.read_csv("data/survey.csv")
 
     # Spotify: 날짜 → 연도
     spotify["release_year"] = pd.to_datetime(
